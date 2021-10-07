@@ -1,2 +1,2 @@
-GitHub Pages Published Site URL for CSE110 Lab2:
+GitHub Pages Published Site URL for CSE110 Lab3:
 https://armanommid.github.io/Lab2/
