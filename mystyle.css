@@ -179,8 +179,7 @@ button:active {
 .rainbow:hover {
     font-family: 'Ephesis', cursive;
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: black;
 }
 .Explode:hover{
     font-family: 'Akronim', cursive;
