@@ -5,6 +5,7 @@
         <meta charset = "utf-8">
         <meta name="author" content="Arman Ommid">
         <meta name="description" content="CSE110 Lab2">
+        <link rel="stylesheet" href="mystyle.css">
         <link 
             rel="icon"
             type="image/jpg"
@@ -13,16 +14,13 @@
     </head>
     <body>
         <header>
-            <h1>The Skynet Project</h1>
+            <h1 class="TopHeader">The Skynet Project</h1>
+            <h2>Skynet Meeting Minutes 1</h2>
         </header>
         <main>
-            <nav>
-                <a href="https://www.linkedin.com/in/aommid/">MyLinkedIn</a>
-            </nav>
-            <h2>Skynet Meeting Minutes 1</h2>
             <hr>
             <section>
-                <h3>What is our Mission?</h3>
+                <h3 class="mission">What is our Mission?</h3>
                 <p>
                     <i>Our company mission is to strive to serve humanity with the </i> <em>most benevolent intentions.</em> <br>
                     <i>We look to technology to advance the ever more complicated human condition and </i> <em>make the world a better place.</em> <br>
@@ -30,9 +28,11 @@
                 </p>
             </section>
             <hr>
-            <section>
-                <h3>Intended Features</h3>
-                <ul>
+            <section class="features">
+                <h3 style="border: 8px white; border-style: groove groove none; padding: 4px;">
+                    Intended Features
+                </h3>
+                <ul style="border: 8px white; border-style: none groove groove; padding: 4px 4px 4px 30px;">
                     <li>
                         Access to Nuclear Codes
                     </li>
@@ -65,7 +65,7 @@
             <hr>
             <section>
                 <h3> Project Development Teams </h3>
-                <ol>
+                <ol class="list1">
                     <li>
                         <b>Software Team</b>
                         <ul>
@@ -138,7 +138,7 @@
                 </ol>
             </section>
             <hr>
-            <section>
+            <section class="example-images">
                 <h3>Examples of how we want our terminators to look:</h3>
                 <img
                     class="fit-picture"
@@ -147,8 +147,6 @@
                     width="300"
                     alt="Scary Terminators"
                 >
-            </section>
-            <section>
                 <h3>Examples of how we <strong>DON'T</strong> want our terminators to look:</h3>
                 <img
                 class="fit-picture"
@@ -159,53 +157,63 @@
             >
             </section>
             <hr>
-            <section>
-                <h3>Terminator Voice Demos</h3>
+            <section class="audio-demos">
+                <h3 class="MediaHeaders">Terminator Voice Demos</h3>
                 <figure>
                     <audio
                         controls
-                            src="media/voice1.mp3"
-                        >
+                        src="media/voice1.mp3"
+                        class="audio"
+                    >
                     </audio>
                 </figure>
                 <figure>
                     <audio
                         controls
-                            src="media/voice2.mp3"
-                        >
+                        src="media/voice2.mp3"
+                        class="audio"
+                    >
                     </audio>
                 </figure>
                 <figure>
                     <audio
                         controls
-                            src="media/voice3.mp3"
-                        >
+                        src="media/voice3.mp3"
+                        class="audio"
+                    >
                     </audio>
                 </figure>
+                <br>
             </section>
-            <section>
-                <h3>Terminator Shock and Awe Demo | <strong><em>WARNING: GRAPHIC CONTENT</em></strong></h3>
+            <section class="video-demo">
+                <h3 class="MediaHeaders">Terminator Shock and Awe Demo | <strong><em>WARNING: GRAPHIC CONTENT</em></strong></h3>
                 <figure>
-                    <video controls poster="https://bigdata-madesimple.com/wp-content/uploads/2018/12/SkyNet.jpg">
+                    <video controls class="video" poster="https://bigdata-madesimple.com/wp-content/uploads/2018/12/SkyNet.jpg">
                         <source src="media/rickroll.mp4" type="video/mp4">
                     </video>
                 </figure>
+                <br>
             </section>
             <hr>
             <section>
                 <h3>Hardware Information</h3>
-                <details>
-                    <summary><b>Specifications</b></summary>
+                <details class="dropdown">
+                    <summary class="summary"><b>Specifications</b></summary>
+                    <br>
                     Terminator contains a Neural Net Processor CPU, or "learning computer", contained within the endoskull and protected by inertial shock dampers. 
                     The CPU, developed by Cyberdyne Systems, is one of the most powerful microprocessors ever built. As part of its vast internal databases, the T-800 contains detailed files on human anatomy and physiology so as to make it a more efficient killer.
                     The CPU can also be updated with multiple database files related to advanced infiltration techniques, basic training for soldiers, emergency medical training, sniper training, an extensive tactical database, and detailed files from other terminators making each unit a combat veteran.
                 </details>
             </section>
             <hr>
+            <button type="button" class="Explode">
+                EXPLODE
+            </button>
+            <hr>
             <section>
-                <h2>BUY A TERMINATOR TODAY! STARTING AT $999</h2>
-                <h3>Enter your information below:</h3>
                 <form method="get" class="form">
+                    <h2 class="BuyHeader rainbow">BUY A TERMINATOR TODAY! STARTING AT $999</h2>
+                    <h3>Enter your information below:</h3>
                     <div class="form">
                         <label for="name">Enter your name:</label>
                         <input type="text" name="name" id="name" required>
@@ -272,14 +280,17 @@
                     <div class="form">
                         <input type="submit" value="Buy Now!">
                     </div>
-                    <br>
-                    <button type="button">
-                        Fun Button
-                    </button>
-                    <nav>
-                        <a href="#Top">Back to Top</a>
-                    </nav>
                 </form>
+                <br>
+                <button type="button">
+                    Fun Button
+                </button>
+                <button type="button" class="scam">
+                    Can't touch me
+                </button>
+                <nav>
+                    <a href="#Top">Back to Top</a>
+                </nav>
             </section>
         </main>
         <hr>
@@ -290,6 +301,9 @@
                 A15254040 <br>
                 CSE110 <br>
                 Lab2
+                <nav>
+                    <a href="https://www.linkedin.com/in/aommid/">MyLinkedIn</a>
+                </nav>
             </details>
         </footer>
     </body>
