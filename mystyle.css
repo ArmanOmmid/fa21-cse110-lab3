@@ -30,11 +30,21 @@ p {
 strong, em {
     text-decoration: underline;
 }
+ol{
+    display: grid;
+    grid-area: unset;
+    grid-row-start: auto;
+    grid-auto-flow: row;
+}
 ul {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+li{
+    display: flex;
+    flex-direction: column;
 }
 
 /* Pseudo-Class */
@@ -66,6 +76,20 @@ button:active {
     border: 4px solid #7F0f0F;
     border-radius: 4px;
 }
+.teams {
+    display: grid;
+    grid-area: auto;
+    color: #000000;
+    background-color: white;
+    margin: 4px;
+    padding: 4px;
+    border: 4px solid #7F0f0F;
+    border-radius: 4px;
+}
+.teamtitle{
+    display: grid;
+    grid-column-start: auto;
+}
 .features {
     display: block;
     color: white;
@@ -86,24 +110,25 @@ button:active {
     border-width: 4px;
     border-radius: 4px;
 }
-.list1 {
-    display: grid;
-    grid-area: unset;
-    grid-row-start: auto;
-    grid-auto-flow: row;
-}
 .example-images {
-    background-color: #C0C0C0;
-    width: 104mm;
+    background-color: white;
+    width: 90vw;
     height: 52mm;
     display: flex;
+    margin: 4px;
+    padding: 4px;
+    border: 4px solid black;
+    border-radius: 4px;
 }
 .fit-picture {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     width: 30vw;
     min-width: 3in;
+    max-width: 4in;
     height: 20vh;
     min-height: 2in;
+    max-height: 3in;
 }
 .MediaHeaders {
     margin: 4px 4px 4px 4px;
@@ -194,3 +219,23 @@ button:active {
 *:active {
     color: rgb(64, 0, 64);
 }
+
+
+/* Media Query */
+@media (width: 360px) {
+    section {
+      color: crimson;
+    }
+  }
+  @media (min-width: 35rem) {
+    section {
+        border: 2px solid darkslategrey;
+        border-width: 4px;
+    }
+  }
+ 
+  @media (max-width: 50rem) {
+    section {
+      background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    }
+  }
