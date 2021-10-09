@@ -208,18 +208,38 @@ button:active {
 }
 
 /* Other Selectors */
-
 #ducks:hover {
     font-family: 'Anton', sans-serif;
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 *:active {
     color: rgb(64, 0, 64);
 }
+a[href] {
+    color: darkorange;
+}
 
+/* Combinator Selectors */
+ul li {
+    font-size: 16px;
+}
+header > h2 {
+    font-size: 26px;
+    font-family: 'Ephesis', cursive;
+    color: lightgray;
+}
+label + input {
+    color: red;
+}
+hr ~ button {
+    font-style: italic;
+    font-weight: bold;
+}
+form.form {
+    background-color: slategray;
+}
 
 /* Media Query */
 @media (width: 360px) {
@@ -233,7 +253,6 @@ button:active {
         border-width: 4px;
     }
   }
- 
   @media (max-width: 50rem) {
     section {
       background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
