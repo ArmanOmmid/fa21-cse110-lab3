@@ -31,10 +31,8 @@ strong, em {
     text-decoration: underline;
 }
 ol{
-    display: grid;
-    grid-area: unset;
-    grid-row-start: auto;
-    grid-auto-flow: row;
+    display: flex;
+    flex-direction: column;
 }
 ul {
     display: flex;
@@ -89,6 +87,7 @@ button:active {
 .teamtitle{
     display: grid;
     grid-column-start: auto;
+    font-style: italic;
 }
 .features {
     display: block;
@@ -210,9 +209,7 @@ button:active {
 /* Other Selectors */
 #ducks:hover {
     font-family: 'Anton', sans-serif;
-    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: darkorange;
 }
 *:active {
     color: rgb(64, 0, 64);
